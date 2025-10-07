@@ -1,0 +1,156 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    background: linear-gradient(to right,rgba(2, 2, 48, 0.733) ,rgb(0, 0, 0));
+    overflow: hidden;
+
+}
+img{
+    background: none;
+}
+#display{
+    /* border: 3px solid black; */
+    /* width: 99vw; */
+}
+#scene1{
+    /* position: absolute; */
+opacity: 100;
+border: 5px dashed grey;
+border-radius: 50px;
+margin-top: 70px;
+transform: scale(0);
+}
+#forest1{
+    height: 80vh;
+    width: 100vw;
+ /* position:absolute; */
+ 
+ /* transform: scale(); */
+}
+#tiger{
+    position:absolute;
+    top:250px;
+    height: 250px;
+transform: scale(0); 
+   /* transform-origin: bottom left; */
+}
+.si{
+    position: absolute;
+    top:300px;
+    height: 200px;
+    right: 320px;
+}
+#g1{
+    top:300px;
+
+}
+#g2{
+    right: 500px;
+    transform: translate(-150px);
+}
+#attack{
+    position: absolute;
+    top: 250px;
+    height: 240px;
+left: 400px;
+}
+.asi{
+opacity: 60%;
+}
+/* -------------2---------------------- */
+#f2{
+    position: absolute;
+border: 5px dashed greenyellow;
+border-radius: 50px;
+    top: 70px;
+height: 80vh;
+width: 100vw;
+
+}
+#goat1{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    height:280px;
+    z-index: 1;
+    opacity: 0;
+
+    /* transform: scale(0); */
+
+}
+#t2{
+    position: absolute;
+    z-index: 1;
+    height: 270px;
+    top:290px;
+    left:-300px;
+    opacity: 0;
+
+}
+.g4,#g42{
+    position: absolute;
+    top: 290px;
+    height: 300px;
+    right: -200px;
+    width: 500px;
+
+}
+.g4{
+    width: 600px;
+}
+
+#g42{
+    
+    top: 200px;
+    right: -200px;
+    width: 600px;
+    /* z-index: 1; */
+}
+/* --------------------------------- */
+#hd{
+    display: flex;
+    justify-content: space-around 
+
+}
+h1{
+    color: rgb(255, 246, 246);
+    border: 2px solid yellow;
+    border-radius: 5px;
+    align-items: center;
+letter-spacing: 20px;
+text-shadow: 2px 4px 7px yellow;
+padding:10px ;
+background: linear-gradient(to right,black);
+/* transform:translate(300px); */
+animation: text 5s 4s forwards,
+            zoomeff 8s 4s ;
+            /* position: absolute */
+};
+#i{
+    letter-spacing: 5px;
+}
+
+@keyframes text{
+0%{
+    opacity: 0;
+}
+50%{
+    transform:scale(1) skew(25deg) ;
+
+}
+100%{
+transform: translate(-200px,-300px);
+}
+}
+@keyframes zoomeff{
+    50%{
+        transform: rotate(133deg);
+    }
+    40%{
+        transform: rotateY(180deg);
+
+    }
+    100%{
+    }
+}

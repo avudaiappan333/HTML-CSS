@@ -1,0 +1,209 @@
+#scene1{
+     animation:zoom 15s forwards,
+     dance 4s 19s forwards;
+}
+@keyframes dance{
+    70%,80%,100%{
+        /* transform: scale(0.5); */
+        transform:scale(0.3)translate(-1200px,-600px);
+        
+
+    }
+    
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+    }
+    20%,30%,40%,50%,70%,90%{
+
+        transform:scale(1);
+    }
+    100%{
+      transform: scale(1);
+    }
+}
+
+
+#tiger{
+    animation: walk 10s forwards 1s;
+}
+@keyframes walk{
+    0%{
+    transform: translateX(-300px);
+    }
+    50%{
+transform: translateX(200px);
+    }
+    80%{
+transform: translateX(240px) skewY(-15deg);
+
+    }
+    90%{
+transform: translateX(240px)skewY(-15deg);
+ }
+ 100%{
+    transform: scale(0) translateX(240px)skewY(-15deg);
+    opacity: 60%;
+ }
+}
+
+#g1{
+    animation:  eat 2s infinite,
+            protect 5s  8s forwards ;
+}
+@keyframes protect{
+    0%{
+
+    }
+    70%{
+    transform:rotateY(180deg);
+    }
+    100%{
+    transform:rotateY(180deg) translateX(-700px);
+
+    }   
+}
+#g2{
+    animation:eat2 2s infinite,
+              hide 1s forwards 10s ;
+}
+@keyframes hide{
+    0%{
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+}
+
+
+@keyframes eat2 {
+    100%{
+        transform: translateX(-150px) rotate(3deg);
+    }
+
+}
+@keyframes eat {
+    100%{
+        transform: rotate(3deg);
+    }
+    }
+    
+#attack{
+transform: scale(0);
+
+animation: fear 2s 11s ease-out forwards;
+}
+@keyframes fear{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+transform:scale(1) translateX(200px);
+    }
+    
+}
+#g1,#g2{
+opacity: 60%;
+}
+/* -----------------2------------------ */
+
+#f2{
+     animation:next 5s 25s forwards,
+    dancee 4s 140s forwards ;
+        transform: scale(0); 
+        /* position: relative; */
+
+}
+@keyframes next{
+    0%{
+        transform: scale(0);
+    }
+60%,70%,80%,90%{
+        transform: scale(1);
+        background-color: green;
+    }
+    100%{
+        transform: scale(1);
+
+    }
+}
+    @keyframes dancee{
+70%,80%,90%,100%{
+    transform: scale(0.3) translate(1200px,-600px);
+}
+    }
+#goat1{
+animation:fearless 15s 28s forwards;
+/* transform: scale(0); */
+        /* transform: translateX(100px); */
+}
+@keyframes fearless{
+0%{
+    transform: translate(-200px);
+}
+    50%{
+        transform: translateX(600px);
+opacity: 100;
+        
+    }
+    60%,70%{
+        transform: skewY(10deg) ;
+opacity: 100;}
+    100%{
+        transform: translateX(200px);
+opacity: 100;
+
+        }
+
+    }
+
+#t2{
+    animation:aasai 15s 27s linear both;
+    transform: scale(1);
+}
+@keyframes aasai{
+    0%{
+        /* transform: scale(1); */
+    }
+    20%{
+        /* opacity: 100; */
+        transform: translateX(700px);
+    }
+    60%{
+  
+        /* opacity: 100; */
+        transform: translateX(700px) rotateY(180deg);}
+        
+     100%  {
+       transform:translateX(-700px) rotateY(180deg);
+    }
+}
+.g4{
+    animation: help 3s 36s both;
+}
+@keyframes help{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(-200px);
+        opacity: 100;
+    }
+}
+#g42{
+    animation: help2 2s 32s both;
+
+}
+
+@keyframes help2{
+    0%{
+        opacity: 0;
+}
+    100%{
+        transform: translateX(-200px);
+        opacity: 100;
+    }
+}
